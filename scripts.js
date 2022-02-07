@@ -52,5 +52,24 @@ function progressSteps() {
     console.log(withProgress)
 
     bar.style.width = withProgress + "%"
+
+    btnPrevDisable ()
+    btnNextDisable ()
+}
+
+function btnPrevDisable () {
+    if(currentStep > 1) {
+        prevButton.disabled = false
+    } else {
+        prevButton.disabled = true
+    }
+}
+
+function btnNextDisable () {
+    if (currentStep === steps.length) {
+        nextButton.disabled = true
+    } else {
+        nextButton.disabled = false
+    }
 }
 
