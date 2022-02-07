@@ -65,7 +65,7 @@ body {
 
 .bar {
     position: absolute;
-    width: 35%;
+    width: 0%;
     background-color: purple;
     height: 5px;
     top: 50%;
