@@ -26,7 +26,7 @@ nextButton.addEventListener('click', () => {
 })
 
 
-// Funcion para quitar clase activa a los steps
+// Funcion para quitar o agregar  clase activa a los steps
 
 prevButton.addEventListener('click', () => {
     if (currentStep > 1) {
@@ -53,19 +53,19 @@ function progressSteps() {
 
     bar.style.width = withProgress + "%"
 
-    btnPrevDisable ()
-    btnNextDisable ()
+    btnPrevDisable()
+    btnNextDisable()
 }
 
-function btnPrevDisable () {
-    if(currentStep > 1) {
+function btnPrevDisable() {
+    if (currentStep > 1) {
         prevButton.disabled = false
     } else {
         prevButton.disabled = true
     }
 }
 
-function btnNextDisable () {
+function btnNextDisable() {
     if (currentStep === steps.length) {
         nextButton.disabled = true
     } else {
